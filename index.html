@@ -31,7 +31,11 @@ small{color:#555}
 <p>כדי להביא מזג אוויר, האפליקציה שולחת בקשות לשירותים חיצוניים. בקשות אלה כוללות את קווי האורך והרוחב של המיקום (או של העיר שבחרת), וכמו בכל בקשת אינטרנט, כתובת ה-IP של המכשיר נחשפת לשרתים האלה:</p>
 <ul>
 <li><b>Open-Meteo.com</b>: נתוני מזג אוויר, תחזית, איכות אוויר וחיפוש ערים.</li>
-<li><b>השירות המטאורולוגי הישראלי (ims.gov.il)</b>: נתוני תצפית רשמיים ואזהרות בישראל. הבקשה כוללת את מיקום תחנת המדידה הקרובה, ללא פרטים אישיים.</li>
+<li><b>השירות המטאורולוגי הישראלי (ims.gov.il)</b>: נתוני תצפית רשמיים, תחזית ואזהרות בישראל. הבקשות כוללות את מיקום תחנת המדידה הקרובה (תצפית) או קובץ תחזית ציבורי שאינו תלוי במשתמש, ללא פרטים אישיים.</li>
+<li><b>MeteoAlarm (meteoalarm.org, EUMETNET)</b>: אזהרות מזג אוויר רשמיות באירופה, רק אם הופעלו התראות. האפליקציה מורידה קובץ אזהרות ציבורי של המדינה שלך (CC BY 4.0, "Data provided by EUMETNET members") שאינו תלוי בך, וההתאמה לאזור שלך נעשית במכשיר. הקואורדינטות שלך לא נשלחות ל-MeteoAlarm.</li>
+<li><b>National Weather Service (api.weather.gov)</b>: אזהרות מזג אוויר רשמיות בארצות הברית, רק אם הופעלו התראות ואתה נמצא בארה"ב. הבקשה כוללת את הקואורדינטות המשוערות שלך (מעוגלות) כדי שיוחזרו רק אזהרות למיקום שלך; לא נשלח מידע אישי אחר. נתוני ה-NWS בנחלת הכלל.</li>
+<li><b>כרטיסיית מכ"ם גשם</b>: כשאתה פותח את כרטיסיית המכ"ם, האפליקציה טוענת תמונות מכ"ם ואריחי מפה ישירות מהשירות המטאורולוגי הישראלי (ims.gov.il) וממפת מרכז המיפוי כשאתה בישראל או בסביבתה, או מ-RainViewer (rainviewer.com) ומ-OpenStreetMap (openstreetmap.org) בשאר העולם. השרתים האלה מקבלים את כתובת ה-IP שלך ואת אזור המפה שנצפה (קואורדינטות האריחים), כמו בכל אתר; האפליקציה לא שולחת להם מידע אישי אחר. דבר אינו נטען אלא אם פתחת את הכרטיסייה.</li>
+<li><b>Rain radar tab</b>: when you open the Radar tab, the app loads radar images and map tiles directly from the Israel Meteorological Service (ims.gov.il) and the Survey of Israel map when you are in/near Israel, or from RainViewer (rainviewer.com) and OpenStreetMap (openstreetmap.org) elsewhere. These servers receive your IP address and the map area being viewed (tile coordinates), like any website; the app does not send them any other personal data. Nothing is loaded unless you open the tab.</li>
 </ul>
 <p>האפליקציה אינה כוללת פרסומות, חשבונות משתמש, ניתוח שימוש (Analytics) או רכיבי מעקב, אינה מוכרת מידע ואינה משתפת אותו עם גורמים אחרים.</p>
 
@@ -69,7 +73,9 @@ small{color:#555}
 <p>To fetch weather, the app sends requests to external services. These requests include the latitude and longitude of your location (or the city you chose), and, as with any internet request, your device's IP address is visible to these servers:</p>
 <ul>
 <li><b>Open-Meteo.com</b>: weather, forecast, air quality and city search.</li>
-<li><b>Israel Meteorological Service (ims.gov.il)</b>: official observation data and warnings in Israel. The request identifies the nearest measuring station, with no personal details.</li>
+<li><b>Israel Meteorological Service (ims.gov.il)</b>: official observation data, forecast and warnings in Israel. Requests identify the nearest measuring station (observations) or download a public forecast file that does not depend on the user, with no personal details.</li>
+<li><b>MeteoAlarm (meteoalarm.org, EUMETNET)</b>: official weather warnings in Europe, only if weather alerts are enabled. The app downloads a public warnings file for your country (CC BY 4.0, "Data provided by EUMETNET members") that does not depend on you; matching to your area is done on the device. Your coordinates are not sent to MeteoAlarm.</li>
+<li><b>National Weather Service (api.weather.gov)</b>: official weather warnings in the United States, only if weather alerts are enabled and you are located in the US. The request includes your approximate coordinates (rounded) so that only warnings for your location are returned; no other personal data is sent. NWS data is in the public domain.</li>
 </ul>
 <p>The app contains no ads, no user accounts, no analytics and no tracking components. It does not sell data and does not share it with anyone else.</p>
 
