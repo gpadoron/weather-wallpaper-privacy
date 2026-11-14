@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "city": { "enabled": true, "percent": 0 },
+  "city": { "enabled": true, "percent": 100 },
   "specials": { "enabled": true, "percent": 100 },
   "green": { "enabled": true, "percent": 100 }
 }
