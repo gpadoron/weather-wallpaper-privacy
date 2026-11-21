@@ -21,7 +21,7 @@ small{color:#555}
 
 <h2>איזה מידע האפליקציה משתמשת בו</h2>
 <ul>
-<li><b>מיקום משוער (גס).</b> אם אישרת הרשאת מיקום, האפליקציה קוראת את המיקום המשוער של המכשיר כדי להציג מזג אוויר מקומי. לא נאסף מיקום מדויק, ולא נאסף מיקום ברקע מעבר לרענון מזג האוויר והתראות שהפעלת. אפשר לא לאשר מיקום ולבחור עיר ידנית.</li>
+<li><b>מיקום (משוער או מדויק).</b> אם אישרת הרשאת מיקום, האפליקציה קוראת את מיקום המכשיר (לפי בחירתך, משוער או מדויק) כדי להציג מזג אוויר מקומי ואת שם העיר שבה אתה נמצא. המיקום אינו נשמר מעבר לשימוש באפליקציה, ואינו נמכר או משותף למטרות פרסום. לא נאסף מיקום ברקע מעבר לרענון מזג האוויר והתראות שהפעלת. אפשר לא לאשר מיקום ולבחור עיר ידנית.</li>
 <li><b>עיר שבחרת ידנית.</b> הטקסט שהקלדת בחיפוש עיר נשלח לשירות חיפוש הערים של Open-Meteo.</li>
 <li><b>הגדרות ונתוני מזג אוויר שמורים.</b> נשמרים רק על המכשיר שלך.</li>
 <li><b>יומן קריסות.</b> אם האפליקציה קורסת, פרטי התקלה נשמרים על המכשיר בלבד ומוצגים לך, ולא נשלחים לשום מקום.</li>
@@ -34,7 +34,9 @@ small{color:#555}
 <li><b>השירות המטאורולוגי הישראלי (ims.gov.il)</b>: נתוני תצפית רשמיים, תחזית ואזהרות בישראל. הבקשות כוללות את מיקום תחנת המדידה הקרובה (תצפית) או קובץ תחזית ציבורי שאינו תלוי במשתמש, ללא פרטים אישיים.</li>
 <li><b>MeteoAlarm (meteoalarm.org, EUMETNET)</b>: אזהרות מזג אוויר רשמיות באירופה, רק אם הופעלו התראות. האפליקציה מורידה קובץ אזהרות ציבורי של המדינה שלך (CC BY 4.0, "Data provided by EUMETNET members") שאינו תלוי בך, וההתאמה לאזור שלך נעשית במכשיר. הקואורדינטות שלך לא נשלחות ל-MeteoAlarm.</li>
 <li><b>National Weather Service (api.weather.gov)</b>: אזהרות מזג אוויר רשמיות בארצות הברית, רק אם הופעלו התראות ואתה נמצא בארה"ב. הבקשה כוללת את הקואורדינטות המשוערות שלך (מעוגלות) כדי שיוחזרו רק אזהרות למיקום שלך; לא נשלח מידע אישי אחר. נתוני ה-NWS בנחלת הכלל.</li>
+<li><b>OpenStreetMap Nominatim (nominatim.openstreetmap.org)</b>: כדי להציג את שם העיר שבה אתה נמצא, האפליקציה פונה קודם לשירות הגיאוקודינג של המכשיר, ורק אם הוא לא מחזיר תוצאה היא שולחת את הקואורדינטות לשירות זה. כמו בכל בקשת אינטרנט, כתובת ה-IP נחשפת לשרת. לא נשלח מידע אישי אחר.</li>
 <li><b>כרטיסיית מכ"ם גשם</b>: כשאתה פותח את כרטיסיית המכ"ם, האפליקציה טוענת תמונות מכ"ם ואריחי מפה ישירות מהשירות המטאורולוגי הישראלי (ims.gov.il) וממפת מרכז המיפוי כשאתה בישראל או בסביבתה, או מ-RainViewer (rainviewer.com) ומ-OpenStreetMap (openstreetmap.org) בשאר העולם. השרתים האלה מקבלים את כתובת ה-IP שלך ואת אזור המפה שנצפה (קואורדינטות האריחים), כמו בכל אתר; האפליקציה לא שולחת להם מידע אישי אחר. דבר אינו נטען אלא אם פתחת את הכרטיסייה.</li>
+<li><b>OpenStreetMap Nominatim (nominatim.openstreetmap.org)</b>: to show the name of the city you are in, the app first uses the device's geocoder, and only if that returns nothing does it send the coordinates to this service. As with any internet request, your IP address is visible to the server. No other personal data is sent.</li>
 <li><b>Rain radar tab</b>: when you open the Radar tab, the app loads radar images and map tiles directly from the Israel Meteorological Service (ims.gov.il) and the Survey of Israel map when you are in/near Israel, or from RainViewer (rainviewer.com) and OpenStreetMap (openstreetmap.org) elsewhere. These servers receive your IP address and the map area being viewed (tile coordinates), like any website; the app does not send them any other personal data. Nothing is loaded unless you open the tab.</li>
 </ul>
 <p>האפליקציה אינה כוללת פרסומות, חשבונות משתמש, ניתוח שימוש (Analytics) או רכיבי מעקב, אינה מוכרת מידע ואינה משתפת אותו עם גורמים אחרים.</p>
@@ -43,7 +45,7 @@ small{color:#555}
 <p>התראות על מזג אוויר קיצוני כבויות כברירת מחדל ופועלות רק אם הפעלת אותן. הן מופעלות על המכשיר בלבד. לשליחתן נדרשת הרשאת הודעות (באנדרואיד 13 ומעלה). ההתראות לידיעה בלבד ואינן תחליף להתראות ולהנחיות הרשמיות.</p>
 
 <h2>הרשאות</h2>
-<p>האפליקציה מבקשת: אינטרנט ומצב רשת (להבאת מזג אוויר), מיקום משוער (אופציונלי), הודעות (רק להתראות שהפעלת), והפעלה בעת אתחול המכשיר (כדי שהתראות שהפעלת ימשיכו לפעול אחרי הפעלה מחדש של הטלפון).</p>
+<p>האפליקציה מבקשת: אינטרנט ומצב רשת (להבאת מזג אוויר), מיקום משוער או מדויק (אופציונלי), הודעות (רק להתראות שהפעלת), והפעלה בעת אתחול המכשיר (כדי שהתראות שהפעלת ימשיכו לפעול אחרי הפעלה מחדש של הטלפון).</p>
 
 <h2>שמירה ומחיקה</h2>
 <p>כל הנתונים נשמרים במכשיר. אפשר למחוק אותם בניקוי נתוני האפליקציה בהגדרות המכשיר או בהסרת האפליקציה. אין לנו שרת ואין מידע עליך שאפשר למחוק מצדנו.</p>
@@ -63,7 +65,7 @@ small{color:#555}
 
 <h2>What information the app uses</h2>
 <ul>
-<li><b>Approximate location.</b> If you grant location permission, the app reads the device's approximate location to show local weather. Precise location is not collected, and location is not tracked in the background beyond the weather refresh and the alerts you turn on. You can decline location and choose a city manually.</li>
+<li><b>Location (approximate or precise).</b> If you grant location permission, the app reads the device's location (approximate or precise, as you choose) to show local weather and the name of the city you are in. The location is not stored beyond what the app needs and is not sold or shared for advertising. Location is not tracked in the background beyond the weather refresh and the alerts you turn on. You can decline location and choose a city manually.</li>
 <li><b>City you search for.</b> The text you type when searching for a city is sent to Open-Meteo's geocoding service.</li>
 <li><b>Settings and cached weather.</b> Stored only on your device.</li>
 <li><b>Crash log.</b> If the app crashes, the details are stored on the device only and shown to you; they are not sent anywhere.</li>
@@ -83,7 +85,7 @@ small{color:#555}
 <p>Extreme-weather alerts are off by default and run only if you turn them on. They run on your device only. Sending them requires the notification permission (Android 13 and above). Alerts are informational only and are no substitute for official warnings and guidance.</p>
 
 <h2>Permissions</h2>
-<p>The app requests: internet and network state (to fetch weather), approximate location (optional), notifications (only for alerts you turn on), and run-at-boot (so that alerts you turned on keep working after the phone restarts).</p>
+<p>The app requests: internet and network state (to fetch weather), approximate or precise location (optional), notifications (only for alerts you turn on), and run-at-boot (so that alerts you turned on keep working after the phone restarts).</p>
 
 <h2>Retention and deletion</h2>
 <p>All data is stored on your device. You can delete it by clearing the app's data in device settings or by uninstalling the app. We run no server and hold no data about you.</p>
